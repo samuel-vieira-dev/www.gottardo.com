@@ -1,0 +1,452 @@
+ body {
+    margin: 0;
+}
+
+@keyframes slideinbutton {
+  0% {
+    opacity: 0.0;
+    top: 600px;
+    }
+      60% {
+        opacity: 0.6;
+        }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0.0;
+    top: 520px;
+    }
+    50% {
+      opacity: 0.5;
+      }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navegacao > a {
+    float: left;
+    
+}
+.layout-cabecalho {
+   text-align: center;
+   border-bottom: 1px solid #ccc;
+   background-color: #ffffff;
+   width: 100%;
+   height: 50px;
+}
+
+.menu-item {
+    display: inline;
+    padding: 0px 50px 0px 50px;
+    font-family: 'Teko', sans-serif;
+}
+
+.menu-item > a {
+    color:  #93bf48;
+    text-decoration: none;
+    font-size: large;
+    line-height: 45px;
+}
+
+.menu-item > a:hover {
+  color:  #bfdb8d;
+  text-decoration: none;
+  font-size: large;
+  line-height: 45px;
+  transition: 0.5s;
+}
+
+.apresentacao {
+    text-align: center;
+    /*text-shadow: 2px 2px #5a8511;*/
+    color: #93bf48;
+    font-style: inherit;
+}
+
+.apresentacao > h1 {
+    font-size: 20px;
+    color:#fff;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 180px;
+    margin-left: auto;
+    margin-right: 36px;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+
+.apresentacao > h2 {
+    font-size: 60px;
+    color:#fff;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    animation-duration: 4s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+
+.botao > button {
+    position: absolute;
+    top: 310px;
+    left: 36%;
+    align-items: center;
+    align-self: center;
+
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #eee !important;
+    font-size: 18px;
+    box-shadow: 1px 1px 1px #93BF48;
+    padding: 17px 55px;
+    border-radius: 0px;
+    background: #93BF48;
+    border-style: none;
+
+    animation-duration: 5s;
+  animation-name: slideinbutton;
+  animation-iteration-count: 1;
+  }
+  .botao > button:hover {
+    background: #A1D14F;
+    transition: 0.5s;
+  }
+  
+                                                /* FIM DO WALLPAPER */
+
+
+  .formatacao {
+      margin: 0px 100px 0px 100px;
+  }
+
+  .info > h1 {
+    text-align: center;
+    color: #1c3741;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+  }
+
+  .info > h2 {
+    text-align: center;
+    color: #1c3741;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    border-bottom: 2px double #93BF48;
+    border-bottom-width: 2px;
+    border-radius: 5px;
+  }
+
+  .info > h3 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    text-align: center;
+  }
+
+  .texto-barra {
+      align-items: center;
+      text-align: center;
+      border-bottom: 3px solid #93BF48;
+      width: 600px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+      color: #1c3741;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+  }
+
+  .formatacao-texto {
+      margin: 0 auto;
+      width: 950px;
+      /* margin-left: 100px;
+      margin-right: 100px; */
+      /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+                                                                /* SERVIÇOS */
+
+.lista-servico {
+  text-align: justify;
+  color: #93bf48;
+  list-style: none;
+}         
+.li-servico > a {
+  color: #93bf48;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}                                              
+
+.texto-servico > h3{
+  font-family: 'Rajdhani', sans-serif;
+    font-size: 17px;
+    line-height: 1.42857143;
+    color: #333;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.servicos {
+    margin: 0 auto;
+      width: 950px;
+      margin-bottom: 100px;
+}
+
+                    /* OBRAS */
+
+/* Slideshow container */
+.gallery-container {
+  width: 100%;
+  position: relative;
+  margin: 0 10%;
+  background: #333;
+  padding: 2px;
+}
+  /* @media (min-width: 480px) {
+      .gallery-container {
+        width: 500px;
+        margin: auto;
+      }
+  } */
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+}
+
+.imgslide {
+  width: 100%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* @media (max-width: 768px) {
+  .numbertext {
+    top: 15px;
+  }
+} */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}        
+
+
+
+                    /* REPRESENTAÇÕES */
+.parceiros {
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 950px;
+  font-size: 14px;
+      
+}
+
+.texto-parceiros {
+  font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.logo-parceiros {
+  height: 100px;
+}
+
+.re-becker > img {
+  height: 80px;
+  width: 225px;
+}
+
+.re-coppi > img {
+  height: 160px;
+}
+
+.re-becker, .re-coppi, .re-conttesp, .re-top-grain {
+  margin-bottom: 50px;
+}
+
+.representacoes {
+  margin-bottom: 100px;
+}
+
+
+                    /* CONTATO */
+
+.contato {
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 950px;
+  font-size: 14px;
+  margin-bottom: 105px;
+      
+}
+
+.contato-texto > h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+    letter-spacing: 1px; 
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    text-decoration: solid underline;
+    color: #93bf48;
+}
+
+.contato-texto > h4 {
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+     
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.contato-texto > h5 {
+  margin-bottom: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+    letter-spacing: 0px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.contato-texto {
+  font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+                    /* LOCALIZAÇÃO */
+
+ .localizacao {
+      width: 950px;
+      height: 500px;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 100px;
+  }
+
+.map-incorpore >iframe {
+  width: 950px;
+  height: 450px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+  /* RODAPE */
+
+  .layout-rodape {
+    padding: 40px 0;
+    background-color: #87af40;
+    color: #fff;
+    text-align: center;
+}

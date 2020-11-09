@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gottardo Business</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/componentes.css">
+</head>
+
+<body>
+    <header class="layout-cabecalho-orc">
+        <div class="container">
+            <nav class="navegacao navegacao-assinatura">
+                <a href="index.html"><img src="../imagens/logoGottardo.jpeg" width="200" height="45" alt="Gottardo Logo"></a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="layout-assinatura">
+        <div class="container">
+            <form action="#" method="POST">
+                <div class="texto-barra-orc">
+                    <h2>DADOS DO ORÇAMENTO</h2>
+                </div>
+                <div class="grupo-entrada">
+                    <label for="razao-social">Nome</label>
+                    <input id="razao-social" type="text" class="campo">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="grupo-entrada">
+                            <label for="cnpj">Telefone</label>
+                            <input id="cnpj" name="cnpj" type="tel" class="campo">
+                        </div>
+                    </div>
+                     <div class="col-sm-8">
+                        <div class="grupo-entrada">
+                            <label for="data-nascimento">E-mail</label>
+                            <input id="data-nascimento" name="dataFundacao" type="email" class="campo" required>
+                        </div>
+                    </div> 
+                </div>
+                <!-- <div class="grupo-entrada">
+                    <label for="responsavel">Responsável</label>
+                    <input id="responsavel" type="text" class="campo" required>
+                </div> -->
+                <!-- <div class="grupo-entrada">
+                    <label for="email">E-mail para contato</label>
+                    <input id="email" type="email" class="campo" required>
+                </div> -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="grupo-entrada">
+                            <label for="estado">Estado da Obra</label>
+                            <select id="estado" class="campo">
+                                <option>Selecione</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>                            
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraime</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="grupo-entrada">
+                            <label for="cidade">Cidade da Obra</label>
+                            <input id="cidade" type="text" class="campo">
+                                <!-- <option>Selecione</option>
+                                <option value="1">Minas Gerais</option>
+                                <option value="2">São Paulo</option>
+                                <option value="3">Fortaleza</option> -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="grupo-entrada">
+                            <label for="senha">Texto</label>
+                            <input id="senha" type="text" class="campo" required style="height: 100px; inset-inline: initial;">
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-6">
+                        <div class="grupo-entrada">
+                            <label for="confirmacao-senha">Confirme a Senha</label>
+                            <input id="confirmacao-senha" type="password" class="campo" required>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="botao-orc" style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+                <input style="border: none;" type="submit" value="ENVIAR" class="botao botao--principal">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="layout-rodape">
+        <div class="container">
+            <p>Copyright © 2020 Gottardo Business & Services Ltda.<br>
+                <strong>CNPJ: 12.320.208/0001-77</strong><br>
+                Rua Nordau Gonçalves&nbsp;Melo, 1693&nbsp;- Santa Mônica<br>
+                CEP 38408 218 – Uberlândia MG <br>
+                Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

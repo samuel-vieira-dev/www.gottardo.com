@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gottardo Business</title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBee9qqbskAy6ibD_-HhhLeiaiBxu5GY_I&callback=initMap&libraries=&v=weekly"
+        defer
+      ></script>
+      <style type="text/css">
+        /* Set the size of the div element that contains the map */
+        #map {
+          height: 400px;
+          /* The height is 400 pixels */
+          width: 100%;
+          /* The width is the width of the web page */
+        }
+      </style>
+      <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          const gottardo = { lat: -18.9248577, lng: -48.2523924 };
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: gottardo,
+          });
+          // The marker, positioned at Uluru
+          const marker = new google.maps.Marker({
+            position: gottardo,
+            map: map,
+          });
+        }
+      </script>
+</head>
+
+<body>
+      <header class="layout-cabecalho">
+        <div class="container-cabecalho">
+          <nav class="navegacao">
+            <a href="../html/index.html"><img src="../imagens/logoGottardo.jpeg" alt="Gottardo Logo" width=200 height=45></a>
+            <div class="navegacao-menu"> 
+                <li class="menu-item">
+                    <a href="#quem-somos-nos">Quem somos nós?</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#servico">Serviços e Obras</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#representacoes">Representações</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contato">Contato</a>
+                </li>
+            </div>
+          </nav>
+        </div>
+      </header>
+      
+                    <!-- PAGINA INICIAL COM WALLPAPER -->
+                    
+      <div class="apresentacao">
+        <div class="wallpaper">
+            <img src="../imagens/wallp1.jpg" alt="Gottardo Business&Services" width=100% height=75%>
+        </div>
+            <h1>JÁ IMAGINOU SEU PROJETO PRONTO?</h1>
+            <h2>FALE CONOSCO ↓</h2>
+        <a href="../html/orcamento.html" class="botao"><button>FAÇA JÁ SEU ORÇAMENTO</button></a>
+      </div>
+
+                    <!-- APRESENTACAO DA EMPRESA -->
+<div class="espacamento-body">
+      <div class="formatacao">
+        <article id="quem-somos-nos" class="info">
+                <h1>QUEM SOMOS NÓS?</h1>
+            <div class="texto-barra">
+                <h2>Empresa</h2>
+            </div>
+            <div class="formatacao-texto">
+                <h3>A Gottardo Business & Service, fundada em 2010, esta situada na cidade de Uberlândia MG, capital nacional da logística, atua no segmento de representação comercial, consultoria, desenvolvimento e implementação de projetos agrícolas e industriais e execução de obras civis. Hoje conta com uma equipe de profissionais altamente capacitados, liderados pelo Engenheiro Industrial Mecânico Odarli Gottardo, com mais de 20 anos de experiência no mercado, atendendo clientes de porte nacional e internacional.</h3>
+            </div>
+        </article>
+      </div>
+
+                        <!-- SERVIÇOS -->
+
+      <div id="servico" class="servicos">
+          <div class="texto-barra">
+              <h2>Serviços</h2>
+          </div>
+        <div class="texto-servico">
+            <h3>A Gottardo Business & Services trabalha no desenvolvimento de projetos
+            agrícolas e industriais, serviços como: Consultoria, Planejamento, Projetos para financiamento, Implementação,
+          Execução de obras e Manutenção. Segue abaixo algumas obras realizadas por nós:</h3>
+          <div class="obras">
+            <div class="galeria">
+              <section class="container gallery-container">
+                <!--Slide-->
+                <div class="mySlides fade"> <!-- 01 -->
+                    <div class="numbertext">01 / 05</div>
+                    <img class="imgslide" src="../imagens/casaUberlandia.jpeg" alt="Jussara - GO"/>
+                    <div class="text">Casa em Uberlândia - MG</div>
+                </div>
+    
+                <div class="mySlides fade"> <!-- 02 -->
+                    <div class="numbertext">02 / 05</div>
+                    <img class="imgslide" src="../imagens/foto3obra.jpeg" alt="Arara Canindé"/>
+                    <div class="text">Casa no Condomínio Jardim Versailler em Uberlândia - MG</div>
+                </div>
+    
+                <div class="mySlides fade"> <!-- 03 -->
+                    <div class="numbertext">03 / 05</div>
+                    <img class="imgslide" src="../imagens/foto1obra_2_600x800.jpeg" alt="Papagaio Verdadeiro"/>
+                    <div class="text">Obra fluxo 150 toneladas por hora, silo secador TAS, com gerador de calor fogo indireto em Jussara - GO</div>
+                </div>
+    
+                <div class="mySlides fade"> <!-- 04 -->
+                    <div class="numbertext">04 / 05</div>
+                    <img class="imgslide" src="../imagens/foto4obra.jpeg" alt="Jandaia"/>
+                    <div class="text">Silo com fornalha em Araguari - MG</div>
+                </div>
+    
+                <div class="mySlides fade"> <!-- 05 -->
+                    <div class="numbertext">05 / 05</div>
+                    <img class="imgslide" src="../imagens/foto5obra.jpeg" alt="Jandaia"/>
+                    <div class="text">Silo com secador em Araguari - MG</div>
+                </div>
+                <!--Final Slides-->
+
+                <!--Navigation-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                         <!-- OBRAS -->
+  <!-- <div class="obras">
+      <div class="texto-barra">
+          <h2>Obras</h2>
+      </div>
+          <div class="galeria">
+              <section class="container gallery-container"> 
+                <div class="mySlides fade"> 
+                    <div class="numbertext">01 / 05</div>
+                    <img class="imgslide" src="../imagens/casaUberlandia.jpeg" alt="Jussara - GO"/>
+                    <div class="text">Casa em Uberlândia - MG</div>
+                </div>
+    
+                <div class="mySlides fade"> 
+                    <div class="numbertext">02 / 05</div>
+                    <img class="imgslide" src="../imagens/foto3obra.jpeg" alt="Arara Canindé"/>
+                    <div class="text">Casa em Araguari - MG</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">03 / 05</div>
+                    <img class="imgslide" src="../imagens/foto1obra_2_600x800.jpeg" alt="Papagaio Verdadeiro"/>
+                    <div class="text">Obra fluxo 150 toneladas por hora, silo secador TAS, com gerador de calor fogo indireto em Jussara - GO</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">04 / 05</div>
+                    <img class="imgslide" src="../imagens/foto4obra.jpeg" alt="Jandaia"/>
+                    <div class="text">Becker foto 4</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">05 / 05</div>
+                    <img class="imgslide" src="../imagens/foto5obra.jpeg" alt="Jandaia"/>
+                    <div class="text">Becker foto 5</div>
+                </div> -->
+                <!--Final Slides-->
+                <!--Navigation-->
+                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+          </div>
+    </div> -->
+
+
+                                    <!-- PARCEIROS -->
+  <div id="representacoes" class="representacoes">                                    
+    <div class="texto-barra">
+      <h2>Representações</h2>
+    </div>
+    <div class="parceiros">
+      <div class="re-becker">
+        <img class="logo-parceiros" src="../imagens/logo-carlos-becker.png" alt="Carlos Becker"/>
+        <h3>Atua na fabricação de equipamentos de recebimento, secagem e armazenamento de grãos, com máquinas de pré-limpeza, secadores, silos de armazenagem e expedição, elevadores, transportadores tipo drag e redler e transportadores de correia.</h3>
+      </div>
+      <div class="re-top-grain">
+        <img class="logo-parceiros" src="../imagens/logo-top-grain.png" alt="Top Grain"/>
+        <h3 class="texto-parceiro">A TOPGRAIN tem como objetivo fornecer uma linha de produtos para o beneficiamento e armazenamento de grãos, contendo um avanço tecnológico significativo em relação aos sistemas tradicionais.</h3>
+      </div>
+      <div class="re-conttesp">
+        <img class="logo-parceiros" src="../imagens/logo-conttesp.jpg" alt="Conttesp"/>
+        <h3 class="texto-parceiro">Atua no setor de agronegócios produzindo geradores de calor, com fogo indireto, preservando assim a integridade do grão (sem odores), sistema estático de secagem, controlador de secagem, mesclador de grãos para silos e sistema de secagem com descarga automatizada.</h3>
+      </div>
+      <div class="re-coppi">
+        <img class="logo-parceiros" src="../imagens/logo-coppi.png" alt="Coppi"/>
+        <h3 class="texto-parceiro"> A COPPI tem forte atuação no setor de manutenção industrial, oferecendo serviços de recuperação de instrumentos com oficina técnica credenciada, treinamentos técnicos e outros...</h3>
+      </div>
+    </div>
+  </div>
+
+                                    <!-- CONTATO -->
+  <div id="contato" class="contato">
+    <div class="texto-barra">
+        <h2>CONTATO</h2>
+    </div>
+
+    <div class="contato-texto">
+              <h3>Diretoria</h3>
+              <h4>(34) 9 9187-0002<br>
+                (34) 9 9192-1183</h4>
+              <h5>gottardo@gottardo.com.br</h5>
+
+              <h3>Financeiro</h3>
+              <h4>(34) 9 9187-0139</h4>
+              <h5>financeiro@gottardo.com.br</h5>
+
+              <h3>Engenharia e Projetos</h3>
+              <h4>(34) 3222 2768</h4>
+              <h5>engenharia@gottardo.com.br</h5>
+
+              <h3>Administrativo</h3>
+              <h4>(34) 3222 2768</h4>
+              <h5>administrativo@gottardo.com.br</h5>
+    </div>
+  </div>
+</div>
+
+
+                                    <!-- LOCALIZACAO -->
+
+        <div class="localizacao">
+            <div class="texto-barra">
+                <h2>Localização</h2>
+            </div>
+    <!-- The div element for the map -->
+            <!-- <div id="map"></div> -->
+            <div class="map-incorpore">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8976.499073919744!2d-48.25561810922922!3d-18.92462310918066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a4456f7671f7dd%3A0x6873967224e0c751!2sR.%20Nordau%20Gon%C3%A7alves%20de%20Melo%2C%201693%20-%20Santa%20M%C3%B4nica%2C%20Uberl%C3%A2ndia%20-%20MG%2C%2038408-218!5e0!3m2!1spt-BR!2sbr!4v1604435401427!5m2!1spt-BR!2sbr" ></iframe>
+            </div>
+        </div>
+
+        
+                                    <!-- RODAPE -->
+
+
+        <footer class="layout-rodape">
+          <div class="container">
+            <div class="rodape-contato">
+              <p>Copyright © 2020 Gottardo Business & Services Ltda.<br>
+                <strong>CNPJ: 12.320.208/0001-77</strong><br>
+                Rua Nordau Gonçalves&nbsp;Melo, 1693&nbsp;- Santa Mônica<br>
+                CEP 38408 218 – Uberlândia MG <br>
+                Todos os direitos reservados.</p>
+            </div>
+          </div>
+        </footer>
+
+  <script src="../javascript/galeria.js"></script>
+</body>
+</html>
